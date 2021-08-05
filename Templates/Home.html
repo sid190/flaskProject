@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Here we go</h1>
+{% if Euro %}
+<p>Italy won the Euros</p>
+{% else %}
+<p>Argentina won the Copa America</p>
+{% endif %}
+
+{% for comps in comps %}
+<h2>Title:{{comps.title}}</h2>
+<h3>Winner:{{comps.winner}}</h3>
+{% endfor %}
+<p>Thank you</p>
+{% endblock %}
+
+
